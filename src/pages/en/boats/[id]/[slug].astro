@@ -1,0 +1,14 @@
+---
+const { id, slug } = Astro.params;
+---
+
+<html lang="en">
+  <head><meta charset="utf-8" /><title>Boat {id} (en)</title></head>
+  <body>
+    <h1>Boat – en</h1>
+    <p>id: {id}</p>
+    <p>slug: {slug}</p>
+    <p>locale: {Astro.currentLocale}</p>
+    <p><a href="/">← Back to front page</a></p>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+---
+const boats = [
+  { id: "1", slug: "sunset-cruiser" },
+  { id: "2", slug: "blue-wave" },
+];
+---
+
+<html lang="en">
+  <head><meta charset="utf-8" /><title>Boats (en)</title></head>
+  <body>
+    <h1>Boats – en.vicecityboats.nurmio.fi</h1>
+    <ul>
+      {boats.map((b) => (
+        <li><a href={`/boats/${b.id}/${b.slug}`}>{b.slug}</a></li>
+      ))}
+    </ul>
+    <p><a href="https://fi.vicecityboats.nurmio.fi">Switch to Finnish version</a></p>
+  </body>
+</html>
